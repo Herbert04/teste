@@ -3,20 +3,13 @@ import unittest
 from time import sleep
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
+import desired_cap
 
 class LoginRecoverAndroidTests(unittest.TestCase):
 
     def setUp(self):
-        desired_cap = {
-            "deviceName": "Nexus 5X API 28",
-            "platformName": "Android",
-            "platformVersion": "9.0",
-            "app": "C:\\Users\\herbe\\Downloads\\app-release.apk",
-            "appPackage": "br.com.simplificauto.napista",
-            "appWaitActivity": "br.com.simplificauto.napista.MainActivity",
-            "newCommandTimeout": "3600"
-        }
-        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_cap)
+        desired_caps = desired_cap.get_desired_capabilities()
+        self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
 
 
