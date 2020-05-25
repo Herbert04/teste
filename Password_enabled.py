@@ -14,7 +14,7 @@ class Password_enabledAndroidTests(unittest.TestCase):
 
 
     def test_login(self):
-        # Definindo um valor fixo para aguardar a localização do elemento
+        # Definindo um valor fixo para aguardar a localização do elemento.
         self.driver.implicitly_wait(40)
 
         for i in range(3):

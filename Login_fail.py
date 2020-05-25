@@ -33,7 +33,7 @@ class LoginFailAndroidTests(unittest.TestCase):
         sleep(5)
         # A função SEND_KEYS foi substituida por  touch, pois, apresentava problema na hora de atualizar o valor do EditText.
 
-        # Preenchimento do email:testedasilva1@grr.la. Em suas respectivas posições no teclado!
+        #Preenchimento do email:testedasilva1@grr.la. Em suas respectivas posições no teclado!
         touch = TouchAction(self.driver)
         touch.tap(x=475, y=1240).perform()
         touch.tap(x=283, y=1253).perform()

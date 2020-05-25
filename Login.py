@@ -12,7 +12,7 @@ class LoginAndroidTests(unittest.TestCase):
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 
     def test_login(self):
-        # Definindo um valor fixo para aguardar a localização do elemento
+        # Definindo um valor fixo para aguardar a localização do elemento.
         self.driver.implicitly_wait(40)
 
         for i in range(3):

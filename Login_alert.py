@@ -37,7 +37,7 @@ class LoginAlertAndroidTests(unittest.TestCase):
 
         # Removendo a palavra 'Informativo' do alert.
         result = result.split('Informativo', 1)
-        # A mensagem é acompanhada quebra de linha, com o replace essa quebra é removida
+        # A mensagem é acompanhada quebra de linha, com o replace essa quebra é removida.
         menssagem = result[1].replace('\n', '')
 
         # self.assertEqual('Preencha os campos', menssagem)
